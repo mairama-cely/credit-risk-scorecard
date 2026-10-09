@@ -1,0 +1,58 @@
+{
+  "all_scores.parquet": {
+    "filename": "all_scores.parquet",
+    "bytes": 11248188,
+    "sha256": "c84d48440d2821dd7aef5002f3b2641e119e6a1a0a31e70071584c0014690baf"
+  },
+  "binning_process.pkl": {
+    "filename": "binning_process.pkl",
+    "bytes": 388967,
+    "sha256": "8a60bd5405848ff908804d29771eb6b48942b40ef66edab95378434477bc230c"
+  },
+  "lgbm_categories.json": {
+    "filename": "lgbm_categories.json",
+    "bytes": 2939,
+    "sha256": "313b2a4202d9796f95bf9adaf1ca05dfb45373cae32747fe1bd6d428374d0f10"
+  },
+  "lgbm_model.txt": {
+    "filename": "lgbm_model.txt",
+    "bytes": 3286560,
+    "sha256": "a502b04778c69e12a95e36bfab07015471f95a2ee1addfb7dd9ec450b12dd9e9"
+  },
+  "lgbm_model_no_ext.txt": {
+    "filename": "lgbm_model_no_ext.txt",
+    "bytes": 2521867,
+    "sha256": "e0f361c635fd3944fa93f7629ce4fc778114c88c511231df242f35d25d0fc6f8"
+  },
+  "lgbm_valid_scores.parquet": {
+    "filename": "lgbm_valid_scores.parquet",
+    "bytes": 736761,
+    "sha256": "5fdb92fea0e668386fc9d7e573142ee2298ed58a6d1e7f42e40eff289233b3a1"
+  },
+  "scorecard_logit.pkl": {
+    "filename": "scorecard_logit.pkl",
+    "bytes": 8836,
+    "sha256": "820092dfeaa10d10e73396ff4124cf92d44947c4fc03642bc4795c9eca106183"
+  },
+  "scorecard_selected_vars.json": {
+    "filename": "scorecard_selected_vars.json",
+    "bytes": 591,
+    "sha256": "634ff5ce80d516595427fc2778dacd8032a7a73c0669c7045898211493d72182"
+  },
+  "scorecard_valid_scores.parquet": {
+    "filename": "scorecard_valid_scores.parquet",
+    "bytes": 783746,
+    "sha256": "3905559a5a62bfc585c7768c79a7323ce135573c53153c8faea5cd39ddb529a4"
+  },
+  "test_access_log.csv": {
+    "filename": "test_access_log.csv",
+    "bytes": 247,
+    "sha256": "721bebd8e0dfb8544d31b630b856e2c69a61cd39a020890c99c4fde77ba423a0"
+  },
+  "test_scores.parquet": {
+    "filename": "test_scores.parquet",
+    "bytes": 1896571,
+    "sha256": "9ffb3ba4dc97dd72a08ccbcebbc687429f18cacd494d8a1973ea132645677292"
+  },
+  "_created_utc": "2026-10-09T11:55:24+00:00"
+}

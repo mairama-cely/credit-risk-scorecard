@@ -1,0 +1,151 @@
+{
+  "version": "0.4.0",
+  "n_train": 215257,
+  "n_valid": 46127,
+  "default_rate_train": 0.08072675917624049,
+  "default_rate_valid": 0.08073362672621241,
+  "metrics": {
+    "train": {
+      "auc": 0.7543598614497072,
+      "gini": 0.5087197228994145,
+      "ks": 0.38099556775027005
+    },
+    "valid": {
+      "auc": 0.7529278297471657,
+      "gini": 0.5058556594943313,
+      "ks": 0.380805171482177
+    }
+  },
+  "auc_gap": 0.0014320317025415807,
+  "auc_gap_max": 0.02,
+  "auc_gap_pass": true,
+  "n_vars": 17,
+  "variables": [
+    "APP_EXT_SOURCE_MEAN",
+    "EXT_SOURCE_3",
+    "EXT_SOURCE_1",
+    "APP_EMPLOYED_YEARS",
+    "BUR_YEARS_SINCE_LAST_CREDIT",
+    "INS_MAX_DAYS_LATE_12M",
+    "CC_MAX_UTILIZATION_12M",
+    "OCCUPATION_TYPE",
+    "APP_CREDIT_GOODS_RATIO",
+    "PREV_MEAN_CREDIT_APPLICATION_RATIO",
+    "ORGANIZATION_TYPE",
+    "PREV_SHARE_REFUSED",
+    "INS_SHARE_LATE",
+    "PREV_SHARE_APPROVED",
+    "BUR_DEBT_CREDIT_RATIO",
+    "CC_MEAN_UTILIZATION",
+    "REGION_RATING_CLIENT_W_CITY"
+  ],
+  "coefficients": {
+    "const": -2.435224996089359,
+    "APP_EXT_SOURCE_MEAN": -0.6865949570615769,
+    "EXT_SOURCE_3": -0.2165473705856669,
+    "EXT_SOURCE_1": -0.1574736613429729,
+    "APP_EMPLOYED_YEARS": -0.35524863453027655,
+    "BUR_YEARS_SINCE_LAST_CREDIT": -0.2869715225854492,
+    "INS_MAX_DAYS_LATE_12M": -0.40357852651842885,
+    "CC_MAX_UTILIZATION_12M": -0.38968945271076033,
+    "OCCUPATION_TYPE": -0.3713439945331968,
+    "APP_CREDIT_GOODS_RATIO": -0.6242636406664721,
+    "PREV_MEAN_CREDIT_APPLICATION_RATIO": -0.4349500818547435,
+    "ORGANIZATION_TYPE": -0.37295026690981764,
+    "PREV_SHARE_REFUSED": -0.3254300633364199,
+    "INS_SHARE_LATE": -0.4435337817749112,
+    "PREV_SHARE_APPROVED": -0.1870054167438395,
+    "BUR_DEBT_CREDIT_RATIO": -0.4113320182009788,
+    "CC_MEAN_UTILIZATION": -0.17204865858432042,
+    "REGION_RATING_CLIENT_W_CITY": -0.44250675690443864
+  },
+  "pvalues": {
+    "const": 0.0,
+    "APP_EXT_SOURCE_MEAN": 0.0,
+    "EXT_SOURCE_3": 6.694274687180232e-31,
+    "EXT_SOURCE_1": 2.3242884443631712e-10,
+    "APP_EMPLOYED_YEARS": 4.349765986585042e-36,
+    "BUR_YEARS_SINCE_LAST_CREDIT": 1.0262193403937427e-21,
+    "INS_MAX_DAYS_LATE_12M": 3.631537504317164e-37,
+    "CC_MAX_UTILIZATION_12M": 1.2378676348789504e-21,
+    "OCCUPATION_TYPE": 3.811690323355503e-30,
+    "APP_CREDIT_GOODS_RATIO": 3.3352174251508156e-98,
+    "PREV_MEAN_CREDIT_APPLICATION_RATIO": 7.952947936659579e-44,
+    "ORGANIZATION_TYPE": 1.881238485365098e-23,
+    "PREV_SHARE_REFUSED": 3.746874525126209e-16,
+    "INS_SHARE_LATE": 2.7814300596912617e-33,
+    "PREV_SHARE_APPROVED": 1.539554905930418e-05,
+    "BUR_DEBT_CREDIT_RATIO": 2.638462116142872e-33,
+    "CC_MEAN_UTILIZATION": 0.000442204693259148,
+    "REGION_RATING_CLIENT_W_CITY": 3.8290771137587866e-31
+  },
+  "vif": {
+    "APP_EXT_SOURCE_MEAN": 2.0460360396686315,
+    "EXT_SOURCE_3": 1.8203360542320115,
+    "EXT_SOURCE_1": 1.2820439684821543,
+    "APP_EMPLOYED_YEARS": 1.3369391497007537,
+    "BUR_YEARS_SINCE_LAST_CREDIT": 1.2039317965980907,
+    "INS_MAX_DAYS_LATE_12M": 1.3083263060802452,
+    "CC_MAX_UTILIZATION_12M": 1.933297112345332,
+    "OCCUPATION_TYPE": 1.2454135942954392,
+    "APP_CREDIT_GOODS_RATIO": 1.023978418979653,
+    "PREV_MEAN_CREDIT_APPLICATION_RATIO": 1.0913664731891362,
+    "ORGANIZATION_TYPE": 1.4379263522853132,
+    "PREV_SHARE_REFUSED": 1.7646982584947357,
+    "INS_SHARE_LATE": 1.2851145945017084,
+    "PREV_SHARE_APPROVED": 1.7924655965453384,
+    "BUR_DEBT_CREDIT_RATIO": 1.059436659663591,
+    "CC_MEAN_UTILIZATION": 1.8898262152900533,
+    "REGION_RATING_CLIENT_W_CITY": 1.0885193908595605
+  },
+  "funnel": {
+    "candidates": 200,
+    "iv_ge_0_02": 82,
+    "after_corr": 41,
+    "after_vif": 41,
+    "after_cap20": 20,
+    "final": 17
+  },
+  "iv_flagged_gt_0_5": [
+    "APP_EXT_SOURCE_MEAN"
+  ],
+  "scaling": {
+    "base_score": 600,
+    "base_odds": 50,
+    "pdo": 20,
+    "factor": 28.85390081777927,
+    "offset": 487.1228762045055,
+    "intercept_split": "equal",
+    "rounding": "integer per bin",
+    "higher_score": "lower risk"
+  },
+  "score_range": {
+    "min": 439,
+    "max": 660
+  },
+  "mapping_check": {
+    "pd_at_base": 0.019607843137254884,
+    "odds_at_base": 50.00000000000005,
+    "odds_ratio_per_pdo": 2.0000000000000004,
+    "max_abs_pd_diff_valid": 0.03842211030000253,
+    "mean_abs_pd_diff_valid": 0.0020239870237938745,
+    "auc_valid_logit_pd": 0.7529418600000258
+  },
+  "params": {
+    "min_bin_size": 0.05,
+    "monotonic_trend": "auto_asc_desc",
+    "iv_min": 0.02,
+    "iv_flag": 0.5,
+    "corr_max": 0.7,
+    "vif_max": 5.0,
+    "max_vars": 20,
+    "p_max": 0.05,
+    "metric_missing": "empirical"
+  },
+  "versions": {
+    "optbinning": "1.0.0",
+    "statsmodels": "0.15.0",
+    "sklearn": "1.9.1",
+    "pandas": "3.0.6"
+  }
+}

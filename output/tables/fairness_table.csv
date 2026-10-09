@@ -1,0 +1,3 @@
+group,n,default_rate,mean_score,mean_pd_scorecard,mean_pd_lgbm,auc_scorecard,auc_lgbm,cutoff,scenario,approval_rate,approval_rate_goods,approval_rate_bads,bad_rate_accepted
+F,30429,0.069605,570.895659,0.074058,0.072135,0.750044,0.784664,563,prudent,0.641822,0.668291,0.288008,0.031234
+M,15698,0.102306,563.382023,0.092930,0.094117,0.742269,0.784419,563,prudent,0.526882,0.562305,0.216065,0.041954

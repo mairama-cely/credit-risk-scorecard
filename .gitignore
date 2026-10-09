@@ -1,0 +1,41 @@
+# Données et modèles : contenu exclu, manifestes (sha256) conservés pour la reproductibilité.
+# Licence Kaggle (Home Credit Default Risk) : les données ne sont pas redistribuées.
+# Motifs commençant par "/" : ils ne s'appliquent qu'à la racine du dépôt.
+/data/**
+!/data/*/
+!/data/**/.gitkeep
+!/data/raw/MANIFEST.json
+/models/**
+!/models/.gitkeep
+!/models/MANIFEST_models.json
+# Journal des ouvertures du jeu de test (preuve de l'ouverture contrôlée, écrit par scripts/evaluate_models.py)
+!/models/test_access_log.csv
+
+# Base locale : la base DuckDB est ignorée, les fichiers SQL sont versionnés
+/database/*.duckdb
+/database/*.duckdb.wal
+
+# Exports Power BI (régénérés par scripts/export_to_powerbi.py) ; deployment/*.pbix reste versionnable
+/powerbi_data/*
+!/powerbi_data/.gitkeep
+*.pbix.bak
+
+# Identifiants
+kaggle.json
+.env
+
+*.zip
+*.parquet
+*.pkl
+*.joblib
+*.duckdb
+*.duckdb.wal
+*.part
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+.vscode/

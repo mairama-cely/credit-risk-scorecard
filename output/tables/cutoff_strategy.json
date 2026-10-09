@@ -1,0 +1,94 @@
+{
+  "rule": "seuils choisis sur la validation, évalués sur le test",
+  "scenarios_target_approval": {
+    "prudent": 0.6,
+    "equilibre": 0.75,
+    "croissance": 0.85
+  },
+  "review_half_width_points": 10,
+  "lgd_base": 0.45,
+  "lgd_sensitivity": [
+    0.35,
+    0.45,
+    0.55
+  ],
+  "ead": "AMT_CREDIT",
+  "pd": "PD du logit de la grille",
+  "cutoffs": {
+    "prudent": {
+      "target_approval": 0.6,
+      "cutoff": 563,
+      "valid_approval": 0.6009929108764932
+    },
+    "equilibre": {
+      "target_approval": 0.75,
+      "cutoff": 550,
+      "valid_approval": 0.7524009799033105
+    },
+    "croissance": {
+      "target_approval": 0.85,
+      "cutoff": 539,
+      "valid_approval": 0.8505430658833222
+    }
+  },
+  "recommendation_rule": "max (part de la perte attendue évitée − part des bons clients refusés) sur la validation",
+  "recommendation_criterion_valid": {
+    "prudent": 0.3321077626138018,
+    "equilibre": 0.31531766527241367,
+    "croissance": 0.2613761627742591
+  },
+  "recommended": "prudent",
+  "recommended_test": {
+    "target_approval": 0.6,
+    "cutoff": 563,
+    "review_low": 553,
+    "review_high": 573,
+    "lgd": 0.45,
+    "n": 46127,
+    "approval_rate": 0.60270557374206,
+    "bad_rate_accepted": 0.034423222186252295,
+    "bad_rate_refused": 0.1509876677943905,
+    "bads_refused_pct": 0.7430182599355531,
+    "good_refused_n": 15559,
+    "good_refused_pct": 0.36693158502936113,
+    "el_all": 904915535.8486807,
+    "el_accepted": 272364035.78926945,
+    "el_avoided": 632551500.0594113,
+    "el_avoided_pct": 0.6990171734273176,
+    "el_accepted_pct_exposure": 0.015265630846796165,
+    "observed_loss_accepted": 265979902.5,
+    "observed_loss_avoided": 653513267.0250001,
+    "exposure_accepted": 17841649554.0,
+    "zone_accept_pct": 0.4677303965139723,
+    "zone_review_pct": 0.25395104819303227,
+    "zone_refuse_pct": 0.27831855529299543,
+    "bad_rate_review": 0.06914802800068294,
+    "marginal_n": NaN,
+    "marginal_bad_rate": NaN,
+    "marginal_pd_mean": NaN,
+    "breakeven_margin": NaN
+  },
+  "approve_all_test": {
+    "n": 46127,
+    "approval_rate": 1.0,
+    "bad_rate_accepted": 0.08073362672621241,
+    "bad_rate_refused": NaN,
+    "bads_refused_pct": 0.0,
+    "good_refused_n": 0,
+    "good_refused_pct": 0.0,
+    "el_all": 904915535.8486807,
+    "el_accepted": 904915535.8486807,
+    "el_avoided": 0.0,
+    "el_avoided_pct": 0.0,
+    "el_accepted_pct_exposure": 0.032798916793309964,
+    "observed_loss_accepted": 919493169.525,
+    "observed_loss_avoided": 0.0,
+    "exposure_accepted": 27589799430.0,
+    "zone_accept_pct": 1.0,
+    "zone_review_pct": 0.0,
+    "zone_refuse_pct": 0.0,
+    "bad_rate_review": NaN
+  },
+  "n_valid": 46127,
+  "n_test": 46127
+}
